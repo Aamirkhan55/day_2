@@ -6,6 +6,7 @@ class ExpandedScreen extends StatelessWidget {
 
   // Expanded : Expande a child  at mainAxisAlignment of row or column and
   // takes all the available space.
+  // But in Expanded it cannot take width .
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class ExpandedScreen extends StatelessWidget {
         centerTitle: true,
         title: const Text('Expanded'),
       ),
-      body: Row(
+      body: Column(
         children: [
           Expanded(
             child: Container(
