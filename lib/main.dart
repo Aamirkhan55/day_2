@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.green[200],
         ),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green.shade300)
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green.shade300),
+        useMaterial3: true,
       ),
       home: const ExpandedScreen(),
     );
