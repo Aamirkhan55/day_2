@@ -18,6 +18,7 @@ class ExpandedScreen extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
+            flex: 2,
             child: Container(
               height: 150,
               // width: 4000,
@@ -38,40 +39,44 @@ class ExpandedScreen extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            height: 150,
-            width: 80,
-            margin: const EdgeInsets.all(10),
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.amber.shade100,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: const Center(
-              child: Text(
-                'Hello',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 22,
+          Expanded(
+            child: Container(
+              height: 150,
+              // width: 80,
+              margin: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.amber.shade100,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Center(
+                child: Text(
+                  'Hello',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
                 ),
               ),
             ),
           ),
-          Container(
-            height: 150,
-            width: 80,
-            margin: const EdgeInsets.all(10),
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.amber.shade100,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: const Center(
-              child: Text(
-                'Hello',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 22,
+          Expanded(
+            child: Container(
+              height: 150,
+              // width: 80,
+              margin: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.amber.shade100,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Center(
+                child: Text(
+                  'Hello',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
                 ),
               ),
             ),

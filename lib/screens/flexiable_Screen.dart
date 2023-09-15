@@ -15,12 +15,14 @@ class FlexiableScreen extends StatelessWidget {
         title: const Text('Flexiable'),
       ),
        body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
+            flex: 1,
             child: Container(
               height: 150,
               // You can give Width to flexiable.
-               width: 300,
+               width: 100,
               margin: const EdgeInsets.all(10),
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
@@ -38,40 +40,46 @@ class FlexiableScreen extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            height: 150,
-            width: 80,
-            margin: const EdgeInsets.all(10),
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.amber.shade100,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: const Center(
-              child: Text(
-                'Hello',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 22,
+          Flexible(
+            flex: 2,
+            child: Container(
+              height: 150,
+              width: 200,
+              margin: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.amber.shade100,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Center(
+                child: Text(
+                  'Hello',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
                 ),
               ),
             ),
           ),
-          Container(
-            height: 150,
-            width: 80,
-            margin: const EdgeInsets.all(10),
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.amber.shade100,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: const Center(
-              child: Text(
-                'Hello',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 22,
+          Flexible(
+            flex: 3,
+            child: Container(
+              height: 150,
+              width: 300,
+              margin: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.amber.shade100,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Center(
+                child: Text(
+                  'Hello',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
                 ),
               ),
             ),
